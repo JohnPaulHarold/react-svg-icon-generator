@@ -10,7 +10,6 @@
     "clean": "rimraf lib dist",
     "build": "babel src --out-dir lib",
     "build:umd": "webpack src/index.js dist/react-svg-icon.js && NODE_ENV=production webpack src/index.js dist/react-svg-icon.min.js",
-    "postinstall": "postinstall-build lib",
     "lint": "eslint src test examples",
     "test": "NODE_ENV=test mocha",
     "test:watch": "NODE_ENV=test mocha --watch",
