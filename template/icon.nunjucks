@@ -10,7 +10,7 @@ import React, {Component} from 'react';
 {%- endif %}
 import PropTypes from 'prop-types';
 
-const iconList = [
+export const iconList = [
   {%- for icon in icons %}
   '{{icon.name}}',
   {%- endfor %}
