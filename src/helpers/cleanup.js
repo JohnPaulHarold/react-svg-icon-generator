@@ -12,7 +12,7 @@ function _basicCleanup(svg) {
     .replace(/data-name="(.*?)"/, '')
     .replace(/([\w-]+)="/g, (match) => _camelCase(match))
     .replace(/\s{2,}/g, ' ')
-    .replace(/xlink:href="(\S*)"/, 'xLinkHref');
+    .replace(/xlink\:href="(\S*)"/g, 'xlinkHref="$1"');
 }
 
 export function cleanupName(name) {
